@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Capture Images</h2>
+<p>Enter the student's name below and start capturing images.</p>
+
+<form method="POST" action="/capture">
+    <div class="form-group">
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Capture</button>
+</form>
+{% endblock %}
